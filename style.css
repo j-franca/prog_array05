@@ -1,0 +1,53 @@
+body{
+    background-color: #efeadd;
+    
+    margin-top: 40px;
+}
+h1{
+    font: 'Poppins';
+    color: #6d7a71;
+    margin-left: 80px;
+}
+label, p{
+    color: rgb(36, 30, 30);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-left: 80px;
+}
+hr{
+    border-top: 1px solid #ba806a;
+}
+.sombra{
+    width: fit-content;
+    margin: 3px;
+    animation: sombra .4s cubic-bezier(.25,.46,.45,.94) both 
+}
+@keyframes sombra{
+    0%{transform:translateZ(0);
+    box-shadow:0 0 0 0 transparent}100%{transform:translateZ(50px);
+    box-shadow:0 0 20px 0 rgba(0,0,0,.35)}
+}
+.botoes{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.um, .dois, .tres{
+    margin: 5px 0;
+}
+
+button{
+    font-size: 1.01rem;
+    color: white;
+    background-color: #865c4c;
+    padding: 3px 5px;
+    border: 0.8px solid #ba806a;
+}
+button:hover{
+    background-color: #414843;
+    border: 1px solid #6d7a71;
+}
+span{
+    margin-left: 80px;
+}
